@@ -1,0 +1,13 @@
+CREATE TABLE bikes (
+    id text primary key,
+    name text NOT NULL,
+    wheels integer,
+    size integer,
+    motor integer NOT NULL CHECK (motor IN (0, 1)),
+    folding integer NOT NULL CHECK (folding IN (0, 1)),
+    image text,
+    available integer
+
+);
+
+

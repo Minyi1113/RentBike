@@ -1,0 +1,58 @@
+
+<!-- Minyi Li, ml3754@drexel.edu -->
+<!-- CS530: DUI, Assignment [1] -->
+
+{% extends 'base.html' %}
+{% set active = "Bikes" %}
+
+{% block title %}
+Bikes
+{% endblock %}
+
+{% block content %}
+
+<h1>Our Bikes</h1>
+
+<p>
+   We have the best selection of bikes around. Please see our selection below!
+</p>
+
+
+<!-- to create a table with a header row containing the header cells using Bootstrap’s table class to get Bootstrap’s nice styling of tables.--> 
+
+<table class = "table">
+   <tr>
+      <th>Image</th>
+      <th>Name</th>
+      <th>Wheels</th>
+      <th>Size</th>
+      <th>Motorzed</th>
+      <th>Folding</th>  
+   </tr>
+
+   <!-- use Flask’s template system to generate the body HTML from data. passed data to dynamically generate the table using the % for pattern within the template.--> 
+   
+   {% for d in data.bikes %}
+   <tr>
+      <td><img class="img-table" src="/static/img/bikes/{{d.image}}"></td>
+      <td>{{ d.name }}</td>
+      <td>{{ d.wheels }}</td>
+      <td>{{ d.size }}</td>
+      <td>{{ d.motor }}</td>
+      <td>{{ d.folding }}</td>
+   </tr>
+   {% endfor %}
+
+</table>
+
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
