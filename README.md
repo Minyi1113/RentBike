@@ -10,3 +10,4 @@ Next, create a file rentView.js that builds the “view” for this page, namely
 
 ![effb2ad7955fe6e4f1405fadf8525b7](https://user-images.githubusercontent.com/56332687/230013521-d9fe99b4-4844-4985-8f3c-79b8ca1f2f71.png)
 ![b1d1a06f0f55e23f060dfebf968f8f6](https://user-images.githubusercontent.com/56332687/230013528-a88592d3-c11f-409a-9f06-809de46717e3.png)
+
